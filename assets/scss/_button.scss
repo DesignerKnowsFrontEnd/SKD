@@ -1,0 +1,14 @@
+.btn {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-header {
+    padding: 16px 32px;
+    font-size: 12px;
+}

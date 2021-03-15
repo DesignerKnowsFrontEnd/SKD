@@ -1,0 +1,26 @@
+.editor-block-list__layout{
+    @import "../../../../../../node_modules/bootstrap/scss/functions";
+    @import "sass/bootstrap_variables";
+    @import "../../../../../../node_modules/bootstrap/scss/mixins";
+    @import "../../../../../../node_modules/bootstrap/scss/grid";
+    @import "../../../../../../node_modules/bootstrap/scss/utilities";
+  
+    @import 'sass/variables';
+    @import 'sass/mixins';
+    @import 'sass/generic';
+    @import 'sass/preloader';
+  
+    @import 'sass/header';
+    @import 'sass/menu';
+    @import 'sass/footer';
+    @import 'sass/headings';
+    @import 'sass/forms';
+    @import 'sass/breadcrumb';
+    @import 'sass/pagination';
+    @import 'sass/buttons';
+  
+    @import 'sass/home';
+    @import 'sass/single';
+    @import 'sass/404';
+  }
+  @import "sass/backoffice";
