@@ -6,9 +6,20 @@
 .btn-primary {
     background-color: $primary;
     border-color: $primary;
+
+    &:hover, :active {
+        background-color: $purple;
+        border-color: $purple;
+    }
 }
 
 .btn-header {
     padding: 16px 32px;
     font-size: 12px;
+}
+
+@include respond-below(md) {
+    .btn-header {
+        width: 100%;
+    }
 }

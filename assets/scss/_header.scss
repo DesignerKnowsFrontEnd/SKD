@@ -27,7 +27,116 @@
                 color: $purple;
             }
         }
+
+        a.active {
+            color: $purple;
+        }
+
     }
 
+    &-MobileBtn {
+        .icon {
+            display: none;
+        }
+    }
+}
+
+.icon {
+    font-size: 24px;
+    color: $white;
+    padding: 22px;
+    transition: all ease 0.3s;
+
+    &:hover, :active, :focus {
+        color: $purple;
+        background-color: $dark-purple;
+    } 
+}
+
+
+.sidebarNav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    right: -150px;
+    background-color: $background; 
+    overflow-x: hidden; 
+    padding: 90px 30px; 
+    transition: 0.5s; 
+
+    &-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-Links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 920px;
+
+        a  {
+            font-size: 28px;
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $purple;
+            }
+        }
+
+        a.active {
+            color: $purple;
+        }
+    }
+
+    &-CTAs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.social-links {
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $purple;
+        }
+    }
+}
+
+.closebtn {
+    font-size: 32px;
+    color: $white;
+}
+
+
+@include respond-below(md) {
+
+    .header {
+        padding: 0 15px;
+
+        &-CTA {
+            width: 80%;
+        }
+    }
+
+    .header a {
+        display: none;
+    }
+    .header a.icon {
+      display: block;
+    }
 
 }
